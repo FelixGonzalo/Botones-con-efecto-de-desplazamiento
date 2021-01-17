@@ -1,0 +1,292 @@
+.container {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.btn {
+  background: none;
+  border: 2px solid black;
+  margin: 2px;
+  padding: 5px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn0:hover {
+  background: black;
+  color: white;
+}
+
+.btn1 {
+  border: 2px solid blue;
+  color: blue;
+}
+
+.btn1::before {
+  content: "";
+  background: blue;
+  top: 0;
+  left: 0;
+  /* bottom: 0;
+  right: 0; */
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn1:hover::before {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.btn1:hover {
+  color: white;
+}
+
+.btn2 {
+  border: 2px solid red;
+  color: red;
+}
+
+.btn2::before {
+  content: "";
+  background: red;
+  /* top: 0;
+  left: 0; */
+  bottom: 0;
+  right: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn2:hover::before {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.btn2:hover {
+  color: white;
+}
+
+.btn3 {
+  border: 2px solid green;
+  color: green;
+}
+
+.btn3::before {
+  content: "";
+  background: green;
+  /* top: 0;
+  left: 0; */
+  bottom: 0;
+  right: 0;
+  width: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn3:hover::before {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.btn3:hover {
+  color: white;
+}
+
+.btn4 {
+  border: 2px solid #acac05;
+  color: #acac05;
+}
+
+.btn4::before {
+  content: "";
+  background: #acac05;
+  /* top: 0;
+  left: 0; */
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn4:hover::before {
+  border-radius: 0px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.btn4:hover {
+  color: white;
+}
+
+.btn5 {
+  border: 2px solid #8b350c;
+  color: #8b350c;
+}
+
+.btn5::before {
+  content: "boton5";
+  color: white;
+  padding: 3px;
+  box-sizing: border-box;
+  background: #8b350c;
+  /* top: 0;
+  left: 0; */
+  bottom: 3px;
+  right: 3px;
+  width: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.btn5:hover::before {
+  bottom: 0;
+  right: 0;
+  transition: 0.5s;
+}
+
+.btn5:hover {
+  color: white;
+}
+
+.btn6 {
+  border: 2px solid #68c728;
+  color: white;
+}
+
+.btn6::before {
+  content: "";
+  background: #68c728;
+  /* top: 0;
+  left: 0; */
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn6:hover::before {
+  width: 0;
+  height: 0;
+  transition: 0.5s;
+}
+
+.btn6:hover {
+  color: #68c728;
+}
+
+.btn7 {
+  border: 2px solid gray;
+  color: white;
+}
+
+.btn7::before {
+  content: "";
+  background: gray;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn7:hover::before {
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transition: 0.5s;
+}
+
+.btn7:hover {
+  color: gray;
+}
+
+.btn8 {
+  border: 2px solid blueviolet;
+  background: rgb(71, 7, 131);
+  color: white;
+}
+
+.btn8::before {
+  content: "boton 8";
+  padding: 4px;
+  box-sizing: border-box;
+  background: blueviolet;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.btn8:hover::before {
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.btn9 {
+  border: none;
+  color: white;
+  background: rgb(4, 124, 133);
+  position: relative;
+}
+
+.btn9::before {
+  content: "boton 9";
+  left: 5%;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  padding: 5px;
+  background: rgb(0, 46, 88);
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+}
+
+.btn9:hover::before {
+  content: "";
+  left: 50%;
+  width: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
